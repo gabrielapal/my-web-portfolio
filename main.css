@@ -43,13 +43,18 @@ nav ul li {
 nav ul li a {
     font-size: 18px;
     padding-left: 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    font-size: 19px;
 }
 
 header .title h1 {
     background: #ceeff2;
     float: center;
     text-align: center;
-    font-size: 53px;
+    font-size: 52px;
     padding: 25px 10px 25px 10px;
     margin: 20px auto;
 }
@@ -57,7 +62,7 @@ header .title h1 {
 .header-image {
     display: flex;
     justify-content: center;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
 }
 
 #header-img {
@@ -90,7 +95,16 @@ header .lets-chat-button {
     margin: 20px auto;
 }
 
+header .lets-chat-button .active {
+    text-decoration: none;
+}
+
+header .lets-chat-button a:hover {
+    font-size: 24px;
+}
+
 /****** Work Styles ******/
+
 #work .content-wrapper {
     background-color: #b7e8dd;
     float: left;
@@ -99,12 +113,25 @@ header .lets-chat-button {
     margin: 25px;
 }
 
+.skills .content-wrapper {
+    background-color: #b1defc;
+    float: left;
+    text-align: left;
+    padding: 15px 25px 15px 25px;
+    margin: 25px;
+}
+
+.skills h3 {}
+
+.skills p {}
+
 /****** About Styles ******/
+
 #about .content-wrapper {
     background-color: #fafaca;
     float: left;
     text-align: left;
-    padding: 50px 25px 15px 25px;
+    padding: 15px 25px 15px 25px;
     margin: 25px;
 }
 
@@ -119,87 +146,130 @@ header .lets-chat-button {
     margin: 0 70px;
 }
 
-#about h2 {
+#about h2 {}
 
-}
+#about p {}
 
-#about p {
-
-}
-
-#education .content-wrapper {
-    background-color: #fcd2f2;
+.other-stuff .content-wrapper {
+    background-color: #fcbb7e;
     float: left;
     text-align: left;
-    width: 650px;
-    padding: 15px 25px;
-    margin: 0px;
+    padding: 15px 25px 15px 25px;
+    margin: 25px;
 }
 
-#education h3 {
+.other-stuff h3 {}
 
-}
-
-#education p {
-
-}
-
-#skills .content-wrapper {
-    background-color: #b1defc;
-    float: right;
-    text-align: left;
-    width: 650px;
-    padding: 15px 25px;
-    margin: 0px;
-}
-
-#skills h3 {
-
-}
-
-#skills p {
-
-}
-
-#other-stuff .content-wrapper {
-    background-color: #fcbb7e;
-}
-
-#other-stuff h3 {
-
-}
-
-#other-stuff p {
-
-}
+.other-stuff p {}
 
 /****** Contact Styles ******/
+
 #contact .content-wrapper {
-    background-color: #a2e0a3;
+    background-color:#d6edb7;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 1600px;
+    margin: 30px auto;
 }
 
 #contact .contact-info {
 
 }
 
-#contact .contact-info ul li {
+footer #contact {
     display: inline-block;
     text-align: center;
-
+    margin: auto;
 }
 
-#contact h2 {
+#contact .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.social-icons p {
+    background-color:#e9deff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#contact .social-icons p i {
+    font-size: 16px;
+  }
 
+/* Style inputs */
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "avenir", sans-serif;
 }
 
-#contact p {
-
+input[type=submit] {
+    background-color: hotpink;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "avenir", sans-serif;
 }
+
+input [type=submit]:hover {
+    background-color: #fcd2f2;
+}
+
+/* Style the container/contact section */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: right;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top:0;
+    }
+}
+
+#contact h2 {}
+
+#contact p {}
 
 #c-r .copyright {
     width: 1600px;
@@ -209,8 +279,6 @@ header .lets-chat-button {
     align-items: center;
     flex-flow: row wrap;
     padding: 12px 10px;
-    font-size: 18px;
+    font-size: 16px;
     margin: auto;
 }
-
-
